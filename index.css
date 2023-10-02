@@ -1,0 +1,84 @@
+
+
+
+*{
+    margin:0;
+    padding:0;
+    /* background-color: rgb(200, 200, 36); */
+}
+
+
+
+h1{
+    font-family: 'Young Serif', serif;
+
+}
+
+main,aside{
+    display: inline-block;
+    vertical-align: top;
+    height: 100vh;
+
+}
+
+main{
+    width:70%;
+    background-color: rgb(172, 224, 29);
+
+}
+
+aside{
+    width:30%;
+    background-color: rgb(150, 150, 214);
+    margin-left:-4px;
+
+}
+
+#box{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.crickter-pic{
+    border-radius: 50px;
+
+}
+
+.country-logo{
+    top: 40px;
+    position:absolute;
+    right:950px;
+
+
+}
+
+.Small-boxes{
+    height: 250px;
+    width: 250px;
+    margin:30px;
+    position: relative;
+    /* border: 1px solid red; */
+    background-color: red;
+
+
+}
+.crickter-name{
+    visibility: hidden;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    text-align: center;
+    background-color: rgb(175, 222, 207);
+    width: 70%;
+    color: rgb(194, 16, 217);
+    font-size: 30px;
+    font-family: font-family: 'Abril Fatface', cursive;;
+    /* transform : rotate(25deg); */
+}
+ 
+.Small-boxes:hover .crickter-name,
+.Small-boxes:hover .country-logo{
+    visibility: visible;
+    transform: scale(1.1);
+
+}
